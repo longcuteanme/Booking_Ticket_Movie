@@ -1,0 +1,42 @@
+// ======================================================
+// Abstracts :: Variables
+// ======================================================
+
+// Paths
+$assetPath : "../assets/images";
+
+//height,width
+$measure-unit:0.25rem;
+$carousel-height:650px;
+
+
+// Colors
+$blue-500:rgba(59, 130, 246);
+$blue-600:rgba(37, 99, 235);
+$gray-300:rgba(209, 213, 219);
+$gray-400:rgba(156, 163, 175);
+$gray-500:rgba(107, 114, 128);
+$gray-600:rgba(75, 85, 99);
+$gray-900:rgba(17, 24, 39);
+$green-500:rgba(16, 185, 129);
+$green-700:rgba(4, 120, 87);
+$red-500:rgba(239, 68, 68);
+$red-600:rgba(220, 38, 38);
+
+//space
+$space-unit:0.25rem;
+
+//border
+$border-unit:1px;
+$rounded:0.125rem;
+$rounded-full:999rem;
+
+// Fonts
+
+
+// Breakpoints
+$breakpoints: (
+  small: 767px,
+  medium: 992px,
+  large: 1200px
+);

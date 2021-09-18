@@ -1,0 +1,122 @@
+//font
+@mixin text($size: "base") {
+  @if $size== "xs" {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+  @if $size== "sm" {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  @if $size== "base" {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  @if $size== "lg" {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+  @if $size== "xl" {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+  @if $size== "2xl" {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  @if $size== "3xl" {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
+@mixin font($weight: "normal") {
+  @if $weight== "thin" {
+    font-weight: 100;
+  }
+  @if $weight== "light" {
+    font-weight: 300;
+  }
+  @if $weight== "normal" {
+    font-weight: 400;
+  }
+  @if $weight== "medium" {
+    font-weight: 500;
+  }
+  @if $weight== "bold" {
+    font-weight: 700;
+  }
+  @if $weight== "black" {
+    font-weight: 900;
+  }
+}
+
+//button
+@mixin buttonItemFilm($normal, $hover) {
+  height: 100%;
+  width: 100%;
+  background-color: $normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.5s;
+  border-radius: $rounded * 3;
+  &:hover {
+    background-color: $hover;
+  }
+  p {
+    margin: 0;
+    text-align: center;
+    color: white;
+    @include text("xl");
+  }
+}
+
+////TheaterSystem
+@mixin theaterSystemLogo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  &:hover {
+    opacity: 1;
+  }
+  img {
+    display: inline-block;
+    width: 66%;
+    margin: $space-unit * 5 0;
+  }
+}
+@mixin TheaterSystemCluster {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  cursor: pointer;
+  padding: $space-unit * 3;
+  &:hover {
+    opacity: 1;
+  }
+}
+@mixin seeDetail {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-top: $space-unit*2;
+}
+@mixin showtimeButton{
+  display: inline-block;
+  @include font("md");
+  @include text("md");
+  color:$green-500;
+  padding: $space-unit $space-unit;
+  border: $border-unit solid;
+  margin: $space-unit*2;
+  transition: color 0.5s;
+  &:hover{
+    color:$blue-500
+  }
+}
+
+////TheaterSystem
