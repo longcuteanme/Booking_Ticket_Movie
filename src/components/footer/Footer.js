@@ -55,32 +55,63 @@ function MyComponent() {
           <h1 className="text-3xl text-white">{t("Technology Used")}</h1>
           <div>
             <img className="inline-block w-16 m-3" src={antd} alt="antd"></img>
-            <img className="inline-block w-16 m-3" src={tailwind} alt="tailwind"></img>
-            <img className="inline-block w-16 m-3" src={axios} alt="axios"></img>
-            <img className="inline-block w-16 m-3" src={bizchart} alt="bizchart"></img>
+            <img
+              className="inline-block w-16 m-3"
+              src={tailwind}
+              alt="tailwind"
+            ></img>
+            <img
+              className="inline-block w-16 m-3"
+              src={axios}
+              alt="axios"
+            ></img>
+            <img
+              className="inline-block w-16 m-3"
+              src={bizchart}
+              alt="bizchart"
+            ></img>
             <img className="inline-block w-16 m-3" src={i18} alt="i18"></img>
-            <img className="inline-block w-16 m-3" src={lodash} alt="lodash"></img>
-            <img className="inline-block w-16 m-3" src={moment} alt="moment"></img>
-            <img className="inline-block w-16 m-3" src={redux} alt="redux"></img>
-            <img className="inline-block w-16 m-3" src={redux_saga} alt="redux_saga"></img>
+            <img
+              className="inline-block w-16 m-3"
+              src={lodash}
+              alt="lodash"
+            ></img>
+            <img
+              className="inline-block w-16 m-3"
+              src={moment}
+              alt="moment"
+            ></img>
+            <img
+              className="inline-block w-16 m-3"
+              src={redux}
+              alt="redux"
+            ></img>
+            <img
+              className="inline-block w-16 m-3"
+              src={redux_saga}
+              alt="redux_saga"
+            ></img>
           </div>
         </div>
       </div>
       <hr className="my-5" style={{ color: "white", border: "1px solid" }} />
       <table className="m-auto">
         <tbody key="tbody">
-        <tr>
-          <td>
-            <GithubOutlined
-              style={{ color: "white", fontSize: "20px", padding: "5px" }}
-            />
-          </td>
-          <td className="p-2">
-            <a className="text-sm text-white" href="https://github.com/longcuteanme/bookingTicketMovie">
-              https://github.com/longcuteanme/bookingTicketMovie
-            </a>
-          </td>
-        </tr>
+          <tr>
+            <td>
+              <GithubOutlined
+                style={{ color: "white", fontSize: "20px", padding: "5px" }}
+              />
+            </td>
+            <td className="p-2">
+              <a
+                className="text-sm text-white"
+                href="https://github.com/longcuteanme/bookingTicketMovie"
+              >
+                https://github.com/longcuteanme/Booking_Ticket_Movie
+              </a>
+            </td>
+          </tr>
         </tbody>
       </table>
     </div>
