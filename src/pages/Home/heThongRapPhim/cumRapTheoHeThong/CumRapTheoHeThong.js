@@ -10,7 +10,7 @@ class CumRapTheoHeThong extends Component {
   };
   renderCumRap = (data) => {
     return (
-      <div className="grid grid-cols-1">
+      <div className="grid grid-cols-1 overflow-auto" style={{maxHeight:'600px'}}>
         {data.map((item, index) => {
           return (
             <div
@@ -26,16 +26,16 @@ class CumRapTheoHeThong extends Component {
             >
               <div className="col-span-1">
                 <img
-                  className="h-auto w-auto"
+                  className="w-auto h-auto"
                   src={item?.hinhAnh}
                   alt={item?.tenPhim}
                 />
               </div>
               <div className="col-span-4 ml-2">
-                <h1 className="text-left text-lg truncate">
+                <h1 className="text-lg text-left truncate">
                   {item?.tenCumRap}
                 </h1>
-                <h3 className="text-left font-light truncate">
+                <h3 className="font-light text-left truncate">
                   {item?.diaChi}
                 </h3>
               </div>

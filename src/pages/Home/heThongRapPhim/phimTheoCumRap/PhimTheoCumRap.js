@@ -26,7 +26,7 @@ class MyComponent extends Component {
             key={index}
           >
             <div
-              className="px-2 py-1 border border-solid m-2"
+              className="px-2 py-1 m-2 border border-solid"
               style={{ display: "inline-block" }}
             >
               {moment(item?.ngayChieuGioChieu).format("HH:mm")}
@@ -52,7 +52,7 @@ class MyComponent extends Component {
             );
           });
           return (
-            <div className="h-auto hover:opacity-100 p-3 grid grid-cols-7" key={index}>
+            <div className="grid h-auto grid-cols-7 p-3 hover:opacity-100" key={index}>
               <div
                 className="w-full h-16 col-span-1 bg-center bg-cover"
                 style={{ backgroundImage: `url(${LoadingBackground})` }}
@@ -63,7 +63,7 @@ class MyComponent extends Component {
                 ></div>
               </div>
               <div className="col-span-6 ml-2 text-left">
-                <h1 className=" font-bold text-xl truncate m-0">
+                <h1 className="m-0 text-xl font-bold truncate ">
                   <Tag color="#cd201f">HOT</Tag>
                   {item?.tenPhim}
                 </h1>
@@ -81,7 +81,7 @@ class MyComponent extends Component {
                     </Button>
                   </Link>
                 ) : (
-                  <div className="font-medium text-md truncate text-green-500">
+                  <div className="font-medium text-green-500 truncate text-md">
                     {this.renderLichChieu(item?.lstLichChieuTheoPhim)}
                   </div>
                 )}
@@ -94,7 +94,7 @@ class MyComponent extends Component {
   };
   render() {
     return (
-      <>
+      <div className="overflow-auto" style={{maxHeight:'600px'}}>
         {this.props?.listDanhSachLichChieuTheoHeThong[this.props?.pickedIndex]
           ?.danhSachPhim ? (
           this.renderPhim(
@@ -105,7 +105,7 @@ class MyComponent extends Component {
         ) : (
           <></>
         )}
-      </>
+      </div>
     );
   }
 }
