@@ -1,0 +1,42 @@
+header {
+  height: 5rem;
+  width: 100vw;
+  background: white;
+  opacity: 0.97;
+  position: fixed;
+  top: 0;
+  box-shadow: 0 5px 10px -3px rgba(0, 0, 0, 0.1);
+  color: black;
+  text-align: center;
+  z-index: 100;
+  &:hover {
+    opacity: 1;
+  }
+  table {
+    height: 100%;
+    width: 100%;
+    table-layout: fixed;
+  }
+}
+#header-logo {
+  width: 5rem;
+  display: inline-block;
+}
+#header-ul {
+  padding: 0px;
+  margin: 0px;
+  li {
+    display: inline-block;
+    margin: 0px 20px;
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+}
+
+.header-Link {
+  color: $gray-900;
+  &:hover {
+    color: $red-500;
+  }
+}

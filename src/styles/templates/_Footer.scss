@@ -1,0 +1,58 @@
+.Footer {
+  height: auto;
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+  padding: $space-unit * 24 $space-unit * 52;
+  background-image: url(#{$assetPath}/backgroundFooter.jpg);
+  background-size: cover;
+  &-info {
+    width: 100%;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  &-infoContact {
+    h1 {
+      color: white;
+      @include text("3xl");
+    }
+    table {
+      margin: 0;
+    }
+    &-field {
+      padding: $space-unit * 2;
+    }
+    &-info {
+      @include text("lg");
+      padding: $space-unit * 2;
+    }
+  }
+  &-tech {
+    h1 {
+      color: white;
+      @include text("3xl");
+    }
+    div {
+      img {
+        display: inline-block;
+        width: $measure-unit * 16;
+        margin: $space-unit * 3;
+      }
+    }
+  }
+  hr {
+    margin: $space-unit * 5 0px;
+    color: white;
+    border: 1px solid;
+  }
+  &-linkGithub {
+      text-align: center;
+      margin: 0;
+      padding: 0px;
+    a {
+      @include text("sm");
+      color: white;
+    }
+  }
+}
