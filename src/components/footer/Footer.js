@@ -97,6 +97,7 @@ function MyComponent() {
       <hr className="my-5" style={{ color: "white", border: "1px solid" }} />
       <table className="m-auto">
         <tbody key="tbody">
+<<<<<<< HEAD
           <tr>
             <td>
               <GithubOutlined
@@ -112,6 +113,20 @@ function MyComponent() {
               </a>
             </td>
           </tr>
+=======
+        <tr>
+          <td>
+            <GithubOutlined
+              style={{ color: "white", fontSize: "20px", padding: "5px" }}
+            />
+          </td>
+          <td className="p-2">
+            <a className="text-sm text-white" href="https://github.com/longcuteanme/Booking_Ticket_Movie">
+              https://github.com/longcuteanme/Booking_Ticket_Movie
+            </a>
+          </td>
+        </tr>
+>>>>>>> long_dev
         </tbody>
       </table>
     </div>
