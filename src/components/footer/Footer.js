@@ -76,7 +76,7 @@ function MyComponent() {
             />
           </td>
           <td className="p-2">
-            <a className="text-sm text-white" href="https://github.com/longcuteanme/bookingTicketMovie">
+            <a className="text-sm text-white" href="https://github.com/longcuteanme/Booking_Ticket_Movie">
               https://github.com/longcuteanme/Booking_Ticket_Movie
             </a>
           </td>
